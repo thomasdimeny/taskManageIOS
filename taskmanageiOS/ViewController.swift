@@ -63,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if currentTask.complete == nil {
             return [deleteAction,finishTask]
         }
-        return [deleteAction]
+        return [finishTask, deleteAction]
     }
     
     @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
